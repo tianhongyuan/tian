@@ -1,0 +1,88 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.example.day1rk"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'com.blankj:utilcode:1.30.6'
+    //网络框架
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    //日志拦截器
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    //网络请求对象解析器
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+    //MD RecyclerView
+    implementation 'com.google.android.material:material:1.1.0'
+    //Glide图片框架
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    //万能适配器
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.0'
+    //核心必须依赖
+    implementation 'com.scwang.smart:refresh-layout-kernel:2.0.3'
+    //经典刷新头
+    implementation 'com.scwang.smart:refresh-header-classics:2.0.3'
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.2'
+    //导入tablayout
+    implementation 'com.android.support:design:30.0.0'
+    //banner
+    implementation 'com.youth.banner:banner:1.4.10'
+    //动画
+    implementation 'jp.wasabeef:recyclerview-animators:4.0.2'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    //网络框架
+    implementation 'com.squareup.okhttp3:okhttp:3.12.1'
+    //网络请求封装框架
+    implementation 'com.squareup.retrofit2:retrofit:2.6.2'
+    //网络请求对象解析器
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+    //线程异常任务调度
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.6.2'
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    //广播
+    implementation 'org.greenrobot:eventbus:3.2.0'
+
+    implementation 'com.trello.rxlifecycle2:rxlifecycle:2.2.1'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-android:2.2.1'
+    implementation 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.6'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'com.blankj:utilcode:1.30.6'//工具类依赖
+    //底部导航栏
+    implementation 'com.ashokvarma.android:bottom-navigation-bar:2.2.0'
+}
